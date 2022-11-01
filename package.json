@@ -4,6 +4,7 @@
   "private": true,
   "proxy": "http://localhost:4000",
   "dependencies": {
+    "@emotion/react": "^11.10.5",
     "@ericz1803/react-google-calendar": "^4.2.2",
     "@react-oauth/google": "^0.2.8",
     "@testing-library/jest-dom": "^5.16.5",

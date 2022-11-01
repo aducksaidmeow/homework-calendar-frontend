@@ -13,7 +13,7 @@ export default function Login() {
         scope: 'https://www.googleapis.com/auth/calendar',
         onSuccess: codeResponse => { 
             console.log(codeResponse);
-            const { code } = codeResponse;
+            const code = codeResponse.code;
 
             axios.post('/api/create-tokens', { code }).then(response => {
                 console.log(response.data);

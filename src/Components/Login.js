@@ -16,6 +16,7 @@ export default function Login() {
             const { code } = codeResponse;
 
             axios.post('/api/create-tokens', { code }).then(response => {
+                console.log(response.data);
                 const decoded_id_token = jwt_decode(response.data.id_token);
                 const refresh_token = response.data.refresh_token;
                 const fullEmail = decoded_id_token.email;
